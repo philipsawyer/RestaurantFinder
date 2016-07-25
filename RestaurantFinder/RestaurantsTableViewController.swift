@@ -9,7 +9,7 @@
 import UIKit
 import ReSwift
 
-class ViewController: UIViewController, StoreSubscriber {
+class RestaurantsTableViewController: UITableViewController, StoreSubscriber {
 
     override func viewDidLoad() {
         super.viewDidLoad()
