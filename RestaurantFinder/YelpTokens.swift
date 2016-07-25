@@ -11,4 +11,4 @@ import Foundation
 let key = "key"
 let consumer_key = "consumerkey"
 let token = "token"
-let token_secret = "token_secret"
+let token_secret = "token_secretasdfasdf"
