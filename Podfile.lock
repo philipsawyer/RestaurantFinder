@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (3.4.1)
+  - FBSnapshotTestCase (2.1.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+    - FBSnapshotTestCase/Core
+  - ReSwift (2.0.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - FBSnapshotTestCase
+  - ReSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  ReSwift: 7abc536a87955c34bf60de3fd32ce9a02ee3ad87
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 555e88f282179cdae6cfcfa49e4082482c986fd7
+
+COCOAPODS: 1.0.1
