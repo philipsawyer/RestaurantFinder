@@ -7,8 +7,7 @@ target 'RestaurantFinder' do
 
   # Pods for RestaurantFinder
   pod 'ReSwift'
-  pod 'SwiftyJSON'
-  pod 'Alamofire'
+  pod 'YelpAPI'
 
   target 'RestaurantFinderTests' do
     inherit! :search_paths

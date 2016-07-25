@@ -1,25 +1,28 @@
 PODS:
-  - Alamofire (3.4.1)
   - FBSnapshotTestCase (2.1.2):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
+  - OMGHTTPURLRQ/UserAgent (3.1.2)
   - ReSwift (2.0.0)
-  - SwiftyJSON (2.3.2)
+  - TDOAuth (1.1.2):
+    - OMGHTTPURLRQ/UserAgent
+  - YelpAPI (1.1.0):
+    - TDOAuth (~> 1.1)
 
 DEPENDENCIES:
-  - Alamofire
   - FBSnapshotTestCase
   - ReSwift
-  - SwiftyJSON
+  - YelpAPI
 
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
   ReSwift: 7abc536a87955c34bf60de3fd32ce9a02ee3ad87
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TDOAuth: f7e356e834295b83c7b5066ee72a30f128c5f722
+  YelpAPI: 66b689666a3cd40d5acc3ae27f3787cd559e9f7d
 
-PODFILE CHECKSUM: 555e88f282179cdae6cfcfa49e4082482c986fd7
+PODFILE CHECKSUM: 87e79e7455171189c7a11b4549a44949085dfd36
 
 COCOAPODS: 1.0.1

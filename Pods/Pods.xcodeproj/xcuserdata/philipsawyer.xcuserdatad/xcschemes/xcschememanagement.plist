@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
+		<key>FBSnapshotTestCase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FBSnapshotTestCase.xcscheme</key>
+		<key>OMGHTTPURLRQ.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,7 +34,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>TDOAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YelpAPI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,17 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FA92C7D144EB5880A8C691F52C2C96C</key>
+		<key>2944645B513C4A481413FD5F6E7AEFA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33D95FDD77DA3622A3D4C9DD96F3789C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3C1DD85AAB56048E583CA8DB6079AA79</key>
+		<key>3BEE08D2EAFC368581D4956766757D9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,7 +67,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<key>A9B44C118FE223468C3C460D7CC2D9CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA119F35D4F6B91994A8BEA51405A4C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2AD9983C312A179AEF156BAADBCF752</key>
 		<dict>
 			<key>primary</key>
 			<true/>
