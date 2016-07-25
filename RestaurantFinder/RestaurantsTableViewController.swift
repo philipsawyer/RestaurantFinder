@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import ReSwift
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, StoreSubscriber {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
 
+        mainStore.subscribe(self)
+
+        mainStore.dispatch(fetchRestaurants)
+    }
+
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        mainStore.unsubscribe(self)
+    }
+
+    func newState(state: AppState) {
+        print("newState: \(state)")
+    }
 }
 
