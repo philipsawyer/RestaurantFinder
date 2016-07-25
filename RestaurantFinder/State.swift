@@ -9,6 +9,8 @@
 import Foundation
 import ReSwift
 
+var mainStore = Store<AppState>(reducer: AppReducer(), state: nil)
+
 struct AppState: StateType {
     var restaurants: [Restaurant]?
     var currentRestaurant: Restaurant?
