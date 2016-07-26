@@ -66,6 +66,7 @@ class RestaurantsTableViewController: UITableViewController, StoreSubscriber {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         mainStore.dispatch(RestaurantAction.setCurrentRestaurant(restaurants![indexPath.row]))
     }
 }
