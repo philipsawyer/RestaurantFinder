@@ -40,7 +40,7 @@
         <!--Restaurant Detail View Controller-->
         <scene sceneID="FkN-cn-imo">
             <objects>
-                <viewController id="wec-UG-uZf" customClass="RestaurantDetailViewController" customModule="RestaurantFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestaurantDetailViewController" id="wec-UG-uZf" customClass="RestaurantDetailViewController" customModule="RestaurantFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="277-5v-315"/>
                         <viewControllerLayoutGuide type="bottom" id="OGd-9u-XPS"/>
