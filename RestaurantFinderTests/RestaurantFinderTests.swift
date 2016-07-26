@@ -7,9 +7,12 @@
 //
 
 import XCTest
+import FBSnapshotTestCase
+import YelpAPI
+
 @testable import RestaurantFinder
 
-class RestaurantFinderTests: XCTestCase {
+class RestaurantFinderTests: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
@@ -25,12 +28,25 @@ class RestaurantFinderTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testRestaurantsTableView() {
+
+        recordMode = true
+        let temp = YLPBusiness()
+        temp.name = "Brazos Tacos"
+        temp.snippetText = "Authentic Texas breakfast tacos - highly recommend for those who've been to Austin! We were blown away by the \"I Love You so Much\" taco."
+        let state = AppState(restaurants: [temp], currentRestaurant: temp)
+
+        let window: UIWindow!
+
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RestaurantTableViewController") as! RestaurantsTableViewController
+        UIApplication.sharedApplication().keyWindow?.rootViewController = UINavigationController(rootViewController: controller)
+        controller.loadViewIfNeeded()
+        window = UIApplication.sharedApplication().keyWindow
+
+        controller.newState(state)
+
+        FBSnapshotVerifyView(window)
     }
     
 }

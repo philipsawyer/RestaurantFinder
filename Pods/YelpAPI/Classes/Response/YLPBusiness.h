@@ -35,10 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) double rating;
 @property (nonatomic, readonly) NSUInteger reviewCount;
 
-@property (nonatomic, readonly, nullable, copy) NSString *snippetText;
+@property (nonatomic, nullable, copy) NSString *snippetText;
 @property (nonatomic, readonly, nullable, copy) NSString *menuProvider;
 @property (nonatomic, readonly, nullable, copy) NSString *displayPhone;
-@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, readonly, nullable, copy) NSString *phone;
 @property (nonatomic, readonly, copy) NSString *identifier;
 
