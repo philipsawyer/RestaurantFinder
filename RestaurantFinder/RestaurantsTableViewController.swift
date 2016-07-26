@@ -18,6 +18,7 @@ class RestaurantsTableViewController: UITableViewController, StoreSubscriber {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        title = "Restaurants"
         self.restaurants = []
     }
 
@@ -41,10 +42,13 @@ class RestaurantsTableViewController: UITableViewController, StoreSubscriber {
     }
 
     func newState(state: AppState) {
-        print("newState: \(state)")
+        //print("newState: \(state)")
 
         restaurants = state.restaurants
-        tableView.reloadData()
+
+        dispatch_async(dispatch_get_main_queue()) { 
+            self.tableView.reloadData()
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -59,6 +63,10 @@ class RestaurantsTableViewController: UITableViewController, StoreSubscriber {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants?.count ?? 0
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        mainStore.dispatch(RestaurantAction.setCurrentRestaurant(restaurants![indexPath.row]))
     }
 }
 
