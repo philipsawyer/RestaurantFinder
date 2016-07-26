@@ -19,7 +19,6 @@
 		DD32FD1D1D466AA30074D3E2 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32FD1C1D466AA30074D3E2 /* State.swift */; };
 		DD32FD1F1D466AA90074D3E2 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32FD1E1D466AA90074D3E2 /* Reducer.swift */; };
 		DD32FD211D466AAD0074D3E2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32FD201D466AAD0074D3E2 /* Action.swift */; };
-		DD32FD231D466B980074D3E2 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32FD221D466B980074D3E2 /* Restaurant.swift */; };
 		DD32FD251D46AE250074D3E2 /* YelpTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32FD241D46AE250074D3E2 /* YelpTokens.swift */; };
 		DD32FD311D46B1B90074D3E2 /* YelpFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32FD301D46B1B90074D3E2 /* YelpFetcher.swift */; };
 		ED61C1CD042514E3E2C4B81F /* Pods_RestaurantFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAA7AF7515CFD6D0BF796B1 /* Pods_RestaurantFinderTests.framework */; };
@@ -67,7 +66,6 @@
 		DD32FD1C1D466AA30074D3E2 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		DD32FD1E1D466AA90074D3E2 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		DD32FD201D466AAD0074D3E2 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		DD32FD221D466B980074D3E2 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		DD32FD241D46AE250074D3E2 /* YelpTokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpTokens.swift; sourceTree = "<group>"; };
 		DD32FD301D46B1B90074D3E2 /* YelpFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpFetcher.swift; sourceTree = "<group>"; };
 		FE6B331DE5A613ECA983D071 /* Pods-RestaurantFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantFinder/Pods-RestaurantFinder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				DD32FCED1D46695D0074D3E2 /* AppDelegate.swift */,
 				DD32FCEF1D46695D0074D3E2 /* RestaurantsTableViewController.swift */,
 				DD32FCF11D46695D0074D3E2 /* Main.storyboard */,
-				DD32FD221D466B980074D3E2 /* Restaurant.swift */,
 				DD32FD241D46AE250074D3E2 /* YelpTokens.swift */,
 				DD32FD301D46B1B90074D3E2 /* YelpFetcher.swift */,
 				DD32FD1B1D466A900074D3E2 /* ReSwift */,
@@ -456,7 +453,6 @@
 				DD32FCF01D46695D0074D3E2 /* RestaurantsTableViewController.swift in Sources */,
 				DD32FCEE1D46695D0074D3E2 /* AppDelegate.swift in Sources */,
 				DD32FD251D46AE250074D3E2 /* YelpTokens.swift in Sources */,
-				DD32FD231D466B980074D3E2 /* Restaurant.swift in Sources */,
 				DD32FD1F1D466AA90074D3E2 /* Reducer.swift in Sources */,
 				DD32FD211D466AAD0074D3E2 /* Action.swift in Sources */,
 				DD32FD1D1D466AA30074D3E2 /* State.swift in Sources */,

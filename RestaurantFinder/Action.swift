@@ -8,8 +8,9 @@
 
 import Foundation
 import ReSwift
+import YelpAPI
 
 enum RestaurantAction: Action {
-    case setRestaurants([Restaurant])
-    case setCurrentRestaurant(Restaurant)
+    case setRestaurants([YLPBusiness])
+    case setCurrentRestaurant(YLPBusiness)
 }

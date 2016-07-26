@@ -8,10 +8,11 @@
 
 import Foundation
 import ReSwift
+import YelpAPI
 
 var mainStore = Store<AppState>(reducer: AppReducer(), state: nil)
 
 struct AppState: StateType {
-    var restaurants: [Restaurant]?
-    var currentRestaurant: Restaurant?
+    var restaurants: [YLPBusiness]?
+    var currentRestaurant: YLPBusiness?
 }
