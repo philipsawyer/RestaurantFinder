@@ -13,7 +13,9 @@ import YelpAPI
 @testable import RestaurantFinder
 
 class RestaurantFinderTests: FBSnapshotTestCase {
-    
+
+    let fail = true
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,11 +25,6 @@ class RestaurantFinderTests: FBSnapshotTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
     func testRestaurantsList() {
@@ -39,10 +36,14 @@ class RestaurantFinderTests: FBSnapshotTestCase {
         let bebedero = YLPBusiness()
         bebedero.name = "The Bebedero"
         bebedero.snippetText = "A great new spot downtown with a cute little patio, too! We were a bit blinded by the sun, and our waitress helped us maneuver our umbrella so we were blind..."
-        let state = AppState(restaurants: [brazos, bebedero], currentRestaurant: brazos)
 
-        //incorrect state will cause error
-        //let state = AppState(restaurants: [brazos], currentRestaurant: brazos)
+        let state: AppState
+        if !fail {
+            state = AppState(restaurants: [brazos, bebedero], currentRestaurant: brazos)
+
+        } else {
+            state = AppState(restaurants: [brazos], currentRestaurant: brazos)
+        }
 
         let window: UIWindow!
 
@@ -60,9 +61,12 @@ class RestaurantFinderTests: FBSnapshotTestCase {
     func testRestaurantDetail() {
         let brazos = YLPBusiness()
         brazos.name = "Brazos Tacos"
-        brazos.snippetText = "Authentic Texas breakfast tacos - highly recommend for those who've been to Austin! We were blown away by the \"I Love You so Much\" taco."
-        //brazos.snippetText = "Here is an incorrect state"
 
+        if !fail {
+            brazos.snippetText = "Authentic Texas breakfast tacos - highly recommend for those who've been to Austin! We were blown away by the \"I Love You so Much\" taco."
+        } else {
+           brazos.snippetText = "Here is an incorrect state"
+        }
 
         let state = AppState(restaurants: [], currentRestaurant: brazos)
 
