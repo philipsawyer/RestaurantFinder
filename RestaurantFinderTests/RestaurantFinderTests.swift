@@ -14,7 +14,7 @@ import YelpAPI
 
 class RestaurantFinderTests: FBSnapshotTestCase {
 
-    let fail = true
+    let fail = false
 
     override func setUp() {
         super.setUp()
